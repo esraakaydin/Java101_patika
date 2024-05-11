@@ -2,7 +2,7 @@ package Loops;
 
 import java.util.Scanner;
 
-public class avregaeCalculation {
+public class averageCalculation {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
