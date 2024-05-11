@@ -6,7 +6,7 @@ public class Flight_ticket {
     public static void main(String[] args) {
 
         int age, type, km;
-        double amount, discountAmount, ageDiscount, typeDiscount, newAmount=0;
+        double amount, discountAmount, ageDiscount, typeDiscount, newAmount = 0;
         System.out.println("Enter your age :");
         Scanner input = new Scanner(System.in);
         age = input.nextInt();
@@ -74,7 +74,6 @@ public class Flight_ticket {
             } else {
                 newAmount = amount;
             }
-
 
 
         } else if (age > 65) {
