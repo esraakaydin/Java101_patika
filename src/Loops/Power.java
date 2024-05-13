@@ -2,7 +2,7 @@ package Loops;
 
 import java.util.Scanner;
 
-public class PowersOfTwo {
+public class Power {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
