@@ -25,22 +25,22 @@ public class ATM {
                     switch (select) {
                         case 1:
                             System.out.println("Enter the amount : ");
-                            int amount = scan.nextInt();
-                            balance += amount;
-                            System.out.println(balance);
+                            int depositAmount = scan.nextInt();
+                            balance += depositAmount;
+                            System.out.println("New balance: " + balance);
                             break;
                         case 2:
                             System.out.println("Enter the amount : ");
-                            amount = scan.nextInt();
-                            if (amount > balance) {
+                            int withdrawAmount = scan.nextInt();
+                            if (withdrawAmount > balance) {
                                 System.out.println("Insufficient funds");
                             } else {
-                                balance -= amount;
-                                System.out.println(balance);
+                                balance -= withdrawAmount;
+                                System.out.println("New balance: " + balance);
                             }
                             break;
                         case 3:
-                            System.out.println(balance);
+                            System.out.println("Balance: " + balance);
                             break;
                         case 4:
                             System.out.println("Exit succesful ! ");
@@ -56,7 +56,7 @@ public class ATM {
                 if (right == 0) {
                     System.out.println("Your account has been blocked. Contact your bank.");
                 } else {
-                    System.out.println("Your remaining rights : " + right);
+                    System.out.println("Your remaining attempts : " + right);
                 }
             }
         }
